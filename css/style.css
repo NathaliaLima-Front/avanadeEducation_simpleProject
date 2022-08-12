@@ -1,0 +1,239 @@
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('./fonts/segoeui.eot');
+  src: local("Segoe UI"),
+  local("Segoe"),
+  local("Segoe WP"),
+  url('./fonts/segoeui.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/segoeui.woff') format('woff'),
+  url('./fonts/segoeui.svg#SegoeUI') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+/* body {
+  height: calc(100% - 192px);
+  height: 100%;
+} */
+
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --gray: #6D767D;
+  --medium-gray: #D9D9D9;
+  --dark-gray: #212429;
+  --medium-red: #E63F51;
+  --dark-red: #BD2845;
+}
+
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+li {
+  display: block;
+}
+
+header {
+  color: var(--white);
+  box-shadow: 0px 7px 16px 1px rgba(204,204,204,1);
+  -webkit-box-shadow: 0px 7px 16px 1px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 7px 16px 1px rgba(204,204,204,1);
+}
+
+header button {
+  border: none !important;
+}
+
+.gradient {
+  background: rgb(230, 63, 82);
+  background: linear-gradient(
+    90deg,
+    rgba(230, 63, 82, 1) 0%,
+    rgba(236, 81, 86, 1) 36%,
+    rgba(241, 96, 89, 1) 61%,
+    rgba(241, 97, 89, 1) 76%,
+    rgba(249, 120, 94, 1) 90%,
+    rgba(255, 138, 98, 1) 100%
+  );
+}
+
+#logo {
+  text-transform: lowercase;
+  width: 145px;
+  font-size: 19px;
+  text-align: right;
+}
+#logo span {
+  font-family: Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#verticalRule {
+  border-left: 2px solid;
+  height: 50px;
+}
+
+header nav .btn {
+  font-size: 16px;
+}
+header nav .btn:hover {
+  color: var(--white);
+  background-color: var(--dark-red);
+}
+
+header nav .btn i {
+  font-size: 25px;
+}
+
+
+
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  line-height: 30px !important;
+}
+
+#search {
+  margin-left: 100px;
+  width: 360px;
+}
+
+#search,
+#search input {
+  color: var(--gray) !important;
+}
+#search i {
+  top: 5px;
+  right: 10px;
+}
+#search input:focus {
+  box-shadow: none;
+}
+
+
+#topContentPage #voltarTodosCursos,
+#topContentPage h2 {
+  font-weight: 900;
+  color: var(--dark-gray);
+  text-decoration: none;
+}
+
+#voltarTodosCursos i::before,
+#progressoCurso i::before {
+  font-size: 20px;
+  line-height: 20px !important;
+}
+.progress,
+.progress-bar {
+  overflow: visible !important;
+}
+
+.progress.mt-2 {
+  --bs-progress-bg: var(--medium-gray);
+}
+
+#progressoCurso h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#progressoCurso .progress-bar {
+  background-color: var(--medium-red);
+}
+
+#accordionLessons h2::before {
+  content: "\f153";
+  position: absolute;
+  top: -3px;
+  z-index: 9;
+  right: 60px;
+  font-family: bootstrap-icons !important;
+  color: var(--white);
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+
+#progressoCurso .progress-bar::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #E63F51;
+  border-radius: 50%;
+  top: -50%;
+  right: -1px;
+  position: absolute;
+}
+
+.iconLesson {
+  color: var(--white);
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  z-index: 9;
+}
+
+#accordionLessons .accordion-button {
+  color: var(--white);
+  font-weight: 600;
+  padding-left: 50px;
+}
+
+#accordionLessons .accordion-button::after {
+  content: "\f235";
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: text-bottom;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 30px;
+  font-size: 30px;
+  line-height: 18px;
+}
+#accordionLessons .accordion-button::after,
+#accordionLessons .accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+
+#accordionLessons .accordion-button:not(.collapsed)::after {
+  transform: none;
+}
+
+#accordionLessons .accordion-button::after {
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+
+#accordionLessons .accordion-button:focus {
+  border-color: none;
+  box-shadow: none;
+}
+
+#accordionLessons .accordion-body {
+  width: 90%;
+  margin: 20px auto;
+}
+
+#accordionLessons video {
+  margin-bottom: 20px;
+}
+
+#accordionLessons .accordion-body .alert i {
+  padding-right: 10px;
+}
+
+.btn-red {
+  background-color: var(--medium-red) !important;
+  color: var(--white) !important;
+}

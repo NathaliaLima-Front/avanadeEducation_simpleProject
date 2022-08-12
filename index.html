@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avanade Education</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/258d9ca568.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="gradient">
+        <nav class="container d-flex align-items-center py-1 px-0">
+            <h1 id="logo" class="d-inline-block pe-3 m-0">Avanade <span>Education</span></h1>
+            <span id="verticalRule" class="d-inline-block pe-2"></span>
+            <button type="button" id="buttonCategory" class="btn btn-outline-light d-inline-flex align-items-center">
+                <i class="bi bi-grid-3x3-gap-fill pe-2"></i>
+                Categorias
+            </button>
+            <span class="flex-row flex-wrap m-auto position-relative" id="search">
+                <input type="text" name="input-search" id="inputSearch" placeholder="O que você quer aprender?" class="form-control">
+                <i class="bi bi-search position-absolute"></i>
+            </span>
+            <div class="flex-row flex-wrap ms-auto">
+                <button type="button" id="buttonNotification" class="btn btn-outline-light d-inline-flex align-items-center">
+                    <i class="bi bi-bell-fill"></i>
+                </button>
+                <button type="button" id="buttonUser" class="btn btn-outline-light d-inline-flex align-items-center">
+                    <i class="bi bi-person-circle"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-3">
+        <div id="topContentPage" class="d-flex">
+            <div class="flex-fill">
+                <button id="voltarTodosCursos" class="btn btn-link d-inline-flex align-items-center p-0" style="--bs-btn-line-height: 20px;">
+                    <i class="bi bi-caret-left-fill pe-1"></i>
+                    Todos os cursos
+                </button>
+                <h2>Introdução a criação de websites com HTML5 e CSS3</h2>
+            </div>
+            <div id="progressoCurso" class="flex-wrap ms-auto text-end">
+                <div class="flex-wrap ms-auto text-end">
+                    <h4 class="d-inline-block m-0">Neste curso você tem 5/8</h4>
+                    <i class="bi bi-award-fill d-inline-block"></i>
+                </div>
+                <div class="progress mt-2" style="height: 8px;">
+                    <div class="progress-bar position-relative" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div id="contentPage">
+            <div class="accordion" id="accordionLessons">
+                <div class="accordion-item position-relative">
+                  <h2 class="accordion-header position-relative" id="lesson-1">
+                      <i class="fa-brands fa-html5 iconLesson"></i>
+                      <button class="accordion-button gradient" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                      Introdução ao curso de HTML
+                    </button>
+                  </h2>
+                  <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="lesson-1" data-bs-parent="#accordionLessons">
+                    <div class="accordion-body">
+                        <video class="w-100" height="380" controls="controls" autoplay="autoplay"></video>
+                        <div class="aboutLesson">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                        <div class="questionsLesson mt-3">
+                            <strong>Why do we use it?</strong>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-1">
+                                <label class="form-check-label" for="flexRadioDefault1-1">
+                                    Paragraphs
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-2">
+                                <label class="form-check-label" for="flexRadioDefault1-2">
+                                    Words
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-3">
+                                <label class="form-check-label" for="flexRadioDefault1-3">
+                                    Bytes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-4">
+                                <label class="form-check-label" for="flexRadioDefault1-4">
+                                    Lists
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-5">
+                                <label class="form-check-label" for="flexRadioDefault1-5">
+                                    Texts
+                                </label>
+                            </div>
+                        </div>
+                        <div class="alert alert-success mt-3 py-1 d-flex align-items-center" role="alert">
+                            <i class="bi bi-check-circle-fill d-inline-block"></i>
+                            Parabéns, resposta correta!
+                          </div>
+                        <button class="btn btn-red">
+                            Próxima aula
+                        </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item position-relative">
+                  <h2 class="accordion-header" id="lesson-2">
+                        <i class="fa-brands fa-html5 iconLesson"></i>
+                    <button class="accordion-button gradient collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                      Entendendo o que é semântica
+                    </button>
+                  </h2>
+                  <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="lesson-2" data-bs-parent="#accordionLessons">
+                    <div class="accordion-body">
+                        <video class="w-100" height="380" controls="controls" autoplay="autoplay"></video>
+                        <div class="aboutLesson">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                        <div class="questionsLesson mt-3">
+                            <strong>Why do we use it?</strong>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-1">
+                                <label class="form-check-label" for="flexRadioDefault1-1">
+                                    Paragraphs
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-2">
+                                <label class="form-check-label" for="flexRadioDefault1-2">
+                                    Words
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-3">
+                                <label class="form-check-label" for="flexRadioDefault1-3">
+                                    Bytes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-4">
+                                <label class="form-check-label" for="flexRadioDefault1-4">
+                                    Lists
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-5">
+                                <label class="form-check-label" for="flexRadioDefault1-5">
+                                    Texts
+                                </label>
+                            </div>
+                        </div>
+                        <div class="alert alert-success mt-3 py-1 d-flex align-items-center" role="alert">
+                            <i class="bi bi-check-circle-fill d-inline-block"></i>
+                            Parabéns, resposta correta!
+                          </div>
+                        <button class="btn btn-red">
+                            Próxima aula
+                        </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item position-relative">
+                    <h2 class="accordion-header" id="lesson-3">
+                        <i class="fa-brands fa-html5 iconLesson"></i>
+                        <button class="accordion-button gradient collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                        Como usar textos e links em HTML
+                      </button>
+                    </h2>
+                    <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="lesson-3" data-bs-parent="#accordionLessons">
+                      <div class="accordion-body">
+                        <video class="w-100" height="380" controls="controls" autoplay="autoplay"></video>
+                        <div class="aboutLesson">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                        <div class="questionsLesson mt-3">
+                            <strong>Why do we use it?</strong>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-1">
+                                <label class="form-check-label" for="flexRadioDefault1-1">
+                                    Paragraphs
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-2">
+                                <label class="form-check-label" for="flexRadioDefault1-2">
+                                    Words
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-3">
+                                <label class="form-check-label" for="flexRadioDefault1-3">
+                                    Bytes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-4">
+                                <label class="form-check-label" for="flexRadioDefault1-4">
+                                    Lists
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-5">
+                                <label class="form-check-label" for="flexRadioDefault1-5">
+                                    Texts
+                                </label>
+                            </div>
+                        </div>
+                        <div class="alert alert-success mt-3 py-1 d-flex align-items-center" role="alert">
+                            <i class="bi bi-check-circle-fill d-inline-block"></i>
+                            Parabéns, resposta correta!
+                          </div>
+                        <button class="btn btn-red">
+                            Próxima aula
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item position-relative">
+                    <h2 class="accordion-header" id="lesson-4">
+                        <i class="fa-brands fa-html5 iconLesson"></i>
+                        <button class="accordion-button gradient collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                        Como inserir imagens em seu site
+                      </button>
+                    </h2>
+                    <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="lesson-4" data-bs-parent="#accordionLessons">
+                      <div class="accordion-body">
+                        <video class="w-100" height="380" controls="controls" autoplay="autoplay"></video>
+                        <div class="aboutLesson">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                        <div class="questionsLesson mt-3">
+                            <strong>Why do we use it?</strong>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-1">
+                                <label class="form-check-label" for="flexRadioDefault1-1">
+                                    Paragraphs
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-2">
+                                <label class="form-check-label" for="flexRadioDefault1-2">
+                                    Words
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-3">
+                                <label class="form-check-label" for="flexRadioDefault1-3">
+                                    Bytes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-4">
+                                <label class="form-check-label" for="flexRadioDefault1-4">
+                                    Lists
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-5">
+                                <label class="form-check-label" for="flexRadioDefault1-5">
+                                    Texts
+                                </label>
+                            </div>
+                        </div>
+                        <div class="alert alert-success mt-3 py-1 d-flex align-items-center" role="alert">
+                            <i class="bi bi-check-circle-fill d-inline-block"></i>
+                            Parabéns, resposta correta!
+                          </div>
+                        <button class="btn btn-red">
+                            Próxima aula
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item position-relative">
+                    <h2 class="accordion-header" id="lesson-5">
+                        <i class="fa-brands fa-html5 iconLesson"></i>
+                        <button class="accordion-button gradient collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                        Como organizar listas com HTML
+                      </button>
+                    </h2>
+                    <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="lesson-5" data-bs-parent="#accordionLessons">
+                      <div class="accordion-body">
+                        <video class="w-100" height="380" controls="controls" autoplay="autoplay"></video>
+                        <div class="aboutLesson">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                        <div class="questionsLesson mt-3">
+                            <strong>Why do we use it?</strong>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-1">
+                                <label class="form-check-label" for="flexRadioDefault1-1">
+                                    Paragraphs
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-2">
+                                <label class="form-check-label" for="flexRadioDefault1-2">
+                                    Words
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-3">
+                                <label class="form-check-label" for="flexRadioDefault1-3">
+                                    Bytes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-4">
+                                <label class="form-check-label" for="flexRadioDefault1-4">
+                                    Lists
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-5">
+                                <label class="form-check-label" for="flexRadioDefault1-5">
+                                    Texts
+                                </label>
+                            </div>
+                        </div>
+                        <div class="alert alert-success mt-3 py-1 d-flex align-items-center" role="alert">
+                            <i class="bi bi-check-circle-fill d-inline-block"></i>
+                            Parabéns, resposta correta!
+                          </div>
+                        <button class="btn btn-red">
+                            Próxima aula
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item position-relative">
+                    <h2 class="accordion-header" id="lesson-6">
+                        <i class="fa-brands fa-html5 iconLesson"></i>
+                        <button class="accordion-button gradient collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+                        Introdução e conceitos básicos do CSS 3
+                      </button>
+                    </h2>
+                    <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="lesson-6" data-bs-parent="#accordionLessons">
+                      <div class="accordion-body">
+                        <video class="w-100" height="380" controls="controls" autoplay="autoplay"></video>
+                        <div class="aboutLesson">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                        <div class="questionsLesson mt-3">
+                            <strong>Why do we use it?</strong>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-1">
+                                <label class="form-check-label" for="flexRadioDefault1-1">
+                                    Paragraphs
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-2">
+                                <label class="form-check-label" for="flexRadioDefault1-2">
+                                    Words
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-3">
+                                <label class="form-check-label" for="flexRadioDefault1-3">
+                                    Bytes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-4">
+                                <label class="form-check-label" for="flexRadioDefault1-4">
+                                    Lists
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-5">
+                                <label class="form-check-label" for="flexRadioDefault1-5">
+                                    Texts
+                                </label>
+                            </div>
+                        </div>
+                        <div class="alert alert-success mt-3 py-1 d-flex align-items-center" role="alert">
+                            <i class="bi bi-check-circle-fill d-inline-block"></i>
+                            Parabéns, resposta correta!
+                          </div>
+                        <button class="btn btn-red">
+                            Próxima aula
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item position-relative">
+                    <h2 class="accordion-header" id="lesson-7">
+                        <i class="fa-brands fa-html5 iconLesson"></i>
+                        <button class="accordion-button gradient collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+                        Estilizando elementos, textos e listas
+                      </button>
+                    </h2>
+                    <div id="collapse-7" class="accordion-collapse collapse" aria-labelledby="lesson-7" data-bs-parent="#accordionLessons">
+                      <div class="accordion-body">
+                        <video class="w-100" height="380" controls="controls" autoplay="autoplay"></video>
+                        <div class="aboutLesson">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                        <div class="questionsLesson mt-3">
+                            <strong>Why do we use it?</strong>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-1">
+                                <label class="form-check-label" for="flexRadioDefault1-1">
+                                    Paragraphs
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-2">
+                                <label class="form-check-label" for="flexRadioDefault1-2">
+                                    Words
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-3">
+                                <label class="form-check-label" for="flexRadioDefault1-3">
+                                    Bytes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-4">
+                                <label class="form-check-label" for="flexRadioDefault1-4">
+                                    Lists
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-5">
+                                <label class="form-check-label" for="flexRadioDefault1-5">
+                                    Texts
+                                </label>
+                            </div>
+                        </div>
+                        <div class="alert alert-success mt-3 py-1 d-flex align-items-center" role="alert">
+                            <i class="bi bi-check-circle-fill d-inline-block"></i>
+                            Parabéns, resposta correta!
+                          </div>
+                        <button class="btn btn-red">
+                            Próxima aula
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item position-relative">
+                    <h2 class="accordion-header" id="lesson-8">
+                        <i class="fa-brands fa-html5 iconLesson"></i>
+                        <button class="accordion-button gradient collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
+                        Dimensão e alinhamento
+                      </button>
+                    </h2>
+                    <div id="collapse-8" class="accordion-collapse collapse" aria-labelledby="lesson-8" data-bs-parent="#accordionLessons">
+                      <div class="accordion-body">
+                        <video class="w-100" height="380" controls="controls" autoplay="autoplay"></video>
+                        <div class="aboutLesson">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                        <div class="questionsLesson mt-3">
+                            <strong>Why do we use it?</strong>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-1">
+                                <label class="form-check-label" for="flexRadioDefault1-1">
+                                    Paragraphs
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-2">
+                                <label class="form-check-label" for="flexRadioDefault1-2">
+                                    Words
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-3">
+                                <label class="form-check-label" for="flexRadioDefault1-3">
+                                    Bytes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-4">
+                                <label class="form-check-label" for="flexRadioDefault1-4">
+                                    Lists
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-5">
+                                <label class="form-check-label" for="flexRadioDefault1-5">
+                                    Texts
+                                </label>
+                            </div>
+                        </div>
+                        <div class="alert alert-success mt-3 py-1 d-flex align-items-center" role="alert">
+                            <i class="bi bi-check-circle-fill d-inline-block"></i>
+                            Parabéns, resposta correta!
+                          </div>
+                        <button class="btn btn-red">
+                            Próxima aula
+                        </button>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-end mt-5">
+                    <button class="btn btn-red me-3">
+                        Voltar e escolher outro curso da trilha
+                    </button>
+                    <button class="btn btn-red">
+                        Continuar sequência da trilha do HTML 5
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fixed-bottom"></footer>
+  </body>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</html>
